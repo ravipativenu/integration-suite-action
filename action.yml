@@ -1,0 +1,12 @@
+name: 'SAP Integration Suite Action'
+description: 'SAP Integration Suite Action'
+inputs:
+  oauth-host:  # url of oauth server
+    description: 'url of oauth server'
+    required: true
+outputs:
+  result: # id of output
+    description: 'result'
+runs:
+  using: 'node12'
+  main: 'index.js'
