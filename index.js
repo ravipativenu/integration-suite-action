@@ -5,7 +5,7 @@ const axios = require('axios').default;
 try {
   const oauthHost = core.getInput('oauth-host');
   console.log(`Hello ${oauthHost}!`);
-  var output = await getToken();
+  var output = getToken();
   console.log(`Output: ${output}`);
   core.setOutput("result", output);
   // Get the JSON webhook payload for the event that triggered the workflow
