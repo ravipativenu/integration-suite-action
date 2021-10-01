@@ -31,9 +31,11 @@ async function getToken() {
             password: core.getInput('oauth-client-secret'),
           }
       })
-      console.log(response);
+      console.log(response.data);
+      return(response.data);
     } catch (error) {
       console.error(error);
+      return(error);
     }
   }
 
