@@ -4,8 +4,9 @@ const github = require('@actions/github');
 try {
   const oauthHost = core.getInput('oauth-host');
   console.log(`Hello ${oauthHost}!`);
-  result = await getToken();
-  core.setOutput("result", result);
+  var output = await getToken();
+  console.log(`Output: ${output}`);
+  core.setOutput("result", output);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
