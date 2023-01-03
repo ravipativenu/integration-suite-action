@@ -10,6 +10,12 @@ inputs:
   oauth-client-secret:  # oAuth client secret
     description: 'oAuth client secret'
     required: true
+  cpi-host:  # cpi host
+    description: 'cpi host'
+    required: true
+  oauth-client-secret:  # oAuth client secret
+    description: 'oAuth client secret'
+    required: true
 outputs:
   result: # result
     description: 'result'
